@@ -1,0 +1,19 @@
+cont = "yes"
+
+
+def count_vowels():
+    user_input = list(input("Type a word, sentence, or paragraph: \n"))
+    vowels = ["a", "e", "i", "o", "u"]
+    count = 0
+    for x in user_input:
+        x = x.lower()
+        print(x)
+        for y in vowels:
+            if x == y:
+                count += 1
+    print("You had " + str(count) + " vowels in your word, sentence, or paragraph.")
+
+
+while cont == "yes":
+    count_vowels()
+    cont = input("Type yes to try again. \nAnything else typed will result in terminating the program. \n")
